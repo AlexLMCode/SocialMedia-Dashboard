@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+  height: 100px;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header-title-container p {
+  color: gray;
+}
+
+.header-switch-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*Attribution styles*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
