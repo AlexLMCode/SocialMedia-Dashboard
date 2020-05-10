@@ -1,6 +1,7 @@
 :root {
   --card-background-color: hsl(227, 47%, 96%);
   --positive-numbers: hsl(163, 72%, 41%);
+  --negative-numbers: hsl(348, 97%, 39%);
 }
 
 * {
@@ -135,7 +136,7 @@ header {
 }
 
 .youtube .card-fluctuation-container {
-  color: hsl(356, 69%, 56%);
+  color: var(--negative-numbers);
 }
 
 
@@ -153,6 +154,56 @@ header {
   font-weight: 700;
 }
 
+.overview-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.small-card-container {
+  background-color: var(--card-background-color);
+  border-radius: 5px;
+  padding: 8%;
+}
+
+.top-small-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: gray;
+  font-weight: 700;
+}
+
+.buttom-small-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttom-small-card .views{
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+}
+
+.fluctuation-small {
+  display: flex;
+}
+
+.down p {
+  color: var(--negative-numbers);
+}
+
+.fluctuation-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--positive-numbers);
+}
+
+.fluctuation-small img {
+  margin-right: 3px;
+}
 
 /*Attribution styles*/
 .attribution {
