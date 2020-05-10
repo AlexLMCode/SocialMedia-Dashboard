@@ -55,7 +55,7 @@ header {
   background-color: hsl(195, 100%, 50%);
   display: block;
   border-radius: 5px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .twitter::before {
@@ -64,7 +64,7 @@ header {
   background-color: hsl(203, 89%, 53%);
   display: block;
   border-radius: 5px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .instagram::before  {
@@ -73,7 +73,7 @@ header {
   background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   display: block;
   border-radius: 5px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .youtube::before {
@@ -82,7 +82,7 @@ header {
   background-color: hsl(348, 97%, 39%);
   display: block;
   border-radius: 5px;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .card-container {
@@ -203,6 +203,48 @@ header {
 
 .fluctuation-small img {
   margin-right: 3px;
+}
+
+.divider {
+  display: none;
+}
+
+@media (max-width: 375px) {
+
+ .header-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-title-container {
+    margin-bottom: 15px;
+  }
+
+  .divider {
+    display: block;
+  }
+
+  .header-switch-container {
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  main {
+    max-width: 350px;
+    padding: 2%;
+  }
+
+  .card-container {
+    margin-top: 15px;
+  }
+
+  .hero-container {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .overview-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*Attribution styles*/
