@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- displays site properly based on user's device -->
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 	<link rel="stylesheet" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
@@ -22,7 +21,10 @@
 			</hr>
 			<div class="header-switch-container">
 				<p>Dark Mode</p>
-				<div>Switch</div>
+				<button class="switch" id="switch">
+					<span></span>
+					<span></span>
+				</button>
 			</div>
 		</header>
 		<section class="hero-container">
@@ -93,7 +95,7 @@
 					<img src="./images/icon-facebook.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">87</p>
+					<span class="views">87</span>
 					<div class="fluctuation-small">
 						<img src="./images/icon-up.svg" alt="">
 						<p>3%</p>
@@ -106,7 +108,7 @@
 					<img src="./images/icon-facebook.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">87</p>
+					<span class="views">87</span>
 					<div class="fluctuation-small down">
 						<img src="./images/icon-down.svg" alt="">
 						<p>52</p>
@@ -119,7 +121,7 @@
 					<img src="./images/icon-instagram.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">5462</p>
+					<span class="views">5462</span>
 					<div class="fluctuation-small">
 						<img src="./images/icon-up.svg" alt="">
 						<p>2257%</p>
@@ -132,7 +134,7 @@
 					<img src="./images/icon-instagram.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">52k</p>
+					<span class="views">52k</span>
 					<div class="fluctuation-small">
 						<img src="./images/icon-up.svg" alt="">
 						<p>1355%</p>
@@ -145,7 +147,7 @@
 					<img src="./images/icon-twitter.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">117</p>
+					<span class="views">117</span>
 					<div class="fluctuation-small">
 						<img src="./images/icon-up.svg" alt="">
 						<p>303%</p>
@@ -158,7 +160,7 @@
 					<img src="./images/icon-twitter.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">507</p>
+					<span class="views">507</span>
 					<div class="fluctuation-small">
 						<img src="./images/icon-up.svg" alt="">
 						<p>553%</p>
@@ -171,7 +173,7 @@
 					<img src="./images/icon-youtube.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">107</p>
+					<span class="views">107</span>
 					<div class="fluctuation-small down">
 						<img src="./images/icon-down.svg" alt="">
 						<p>19%</p>
@@ -184,7 +186,7 @@
 					<img src="./images/icon-youtube.svg" alt="">
 				</div>
 				<div class="buttom-small-card">
-					<p class="views">1407</p>
+					<span class="views">1407</span>
 					<div class="fluctuation-small down">
 						<img src="./images/icon-down.svg" alt="">
 						<p>-12%</p>
@@ -199,6 +201,7 @@
 		<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Alex
 			Merino</a>.
 	</div>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
